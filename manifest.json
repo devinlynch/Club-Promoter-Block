@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "Club Promoter Newsfeed Blocker",
+  "description": "This will hide all club promoter posts from your Facebook Newsfeed. Because, no one gives a damn that its $3.50 jagerbombs this Thursday night.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["jquery.js", "promoterBlocker.js"]
+    }
+  ]
+}
